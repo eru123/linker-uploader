@@ -3,9 +3,9 @@
 namespace Linker\Uploader;
 
 class Upload {
-    private string $dir = "uploads";
-    private string $exts = "";
-    private float $max_size = 2.0; // Mega Bytes
+    public string $dir = "uploads";
+    public string $exts = "";
+    public $max_size = 2; // Mega Bytes
     private array $errors = [];
     private bool $ready = false;
     public function __construct(array $config = []){
